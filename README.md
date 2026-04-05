@@ -17,12 +17,13 @@ This submission analyzes the Rebar construction analytics database (`candidate_d
 C:/Rebar/
     analysis.ipynb                     # Main analysis notebook
     SUBMISSION_README.md               # How to run instructions
-    part1_normalization_quality.png
-    part2_duplicate_detection.png
-    part3_viz1_market_share.png
-    part3_viz2_category_heatmap.png
-    part3_viz3_cooccurrence.png
-    part3_viz4_time_trends.png
+    charts/
+        part1_normalization_quality.png
+        part2_duplicate_detection.png
+        part3_viz1_market_share.png
+        part3_viz2_category_heatmap.png
+        part3_viz3_cooccurrence.png
+        part3_viz4_time_trends.png
 ```
 
 ---
@@ -39,7 +40,7 @@ Key findings:
 
 The section also proposes and implements an improved five-stage entity resolution pipeline using fuzzy matching, blocking, union-find clustering, and confidence gating.
 
-![Part 1: Normalization Quality](part1_normalization_quality.png)
+![Part 1: Normalization Quality](charts/part1_normalization_quality.png)
 
 ---
 
@@ -59,7 +60,7 @@ Identifies projects representing the same real-world construction job uploaded m
 
 Results are split into an auto-merge tier (score >= 0.80) and a needs-review tier (0.65 to 0.80). Union-find clusters pairs into duplicate groups and a canonical record is selected by recency and extraction richness.
 
-![Part 2: Duplicate Detection](part2_duplicate_detection.png)
+![Part 2: Duplicate Detection](charts/part2_duplicate_detection.png)
 
 ---
 
@@ -71,25 +72,25 @@ Four visualizations answering questions a manufacturer rep would care about, plu
 
 Top 20 manufacturers by total units specified. Titus, Price, Greenheck, and Trane together account for roughly 42% of all non-undefined units.
 
-![Viz 1: Market Share](part3_viz1_market_share.png)
+![Viz 1: Market Share](charts/part3_viz1_market_share.png)
 
 ### Viz 2: Category Specialization
 
 Each manufacturer's unit share broken down by equipment category. Greenheck dominates Fans, Titus leads Supply Diffusers, and Mitsubishi is the clear Split VRF specialist.
 
-![Viz 2: Category Specialization](part3_viz2_category_heatmap.png)
+![Viz 2: Category Specialization](charts/part3_viz2_category_heatmap.png)
 
 ### Viz 3: Manufacturer Co-occurrence
 
 How often pairs of manufacturers appear on the same projects. Titus and Greenheck are the most common pairing due to their complementary product categories. High co-occurrence between direct competitors reveals displacement opportunities.
 
-![Viz 3: Co-occurrence](part3_viz3_cooccurrence.png)
+![Viz 3: Co-occurrence](charts/part3_viz3_cooccurrence.png)
 
 ### Viz 4: Time Trends
 
 Monthly project upload volume alongside unit trends for the top 6 manufacturers. The dataset spans fewer than 12 months, so no seasonal conclusions are drawn.
 
-![Viz 4: Time Trends](part3_viz4_time_trends.png)
+![Viz 4: Time Trends](charts/part3_viz4_time_trends.png)
 
 ### Competitor Brands in the Market
 
