@@ -1,9 +1,5 @@
 # Rebar DAE Take-Home Case Study
 
-**Candidate:** Prashanth Talwar
-**Date:** April 2026
-
----
 
 ## Overview
 
