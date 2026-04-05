@@ -17,7 +17,6 @@ This submission analyzes the Rebar construction analytics database (`candidate_d
 Rebar/
     analysis.ipynb          # Main analysis notebook (run this)
     README.md               # This file
-    SUBMISSION_README.md    # Setup and run instructions
     charts/
         part1_normalization_quality.png
         part2_duplicate_detection.png
@@ -31,7 +30,7 @@ Rebar/
 
 ## How to Run
 
-See `SUBMISSION_README.md` for full setup instructions. In short:
+Install dependencies and generate the notebook:
 
 ```bash
 pip install nbformat pandas matplotlib seaborn rapidfuzz
